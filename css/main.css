@@ -124,14 +124,12 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;  
-
+  justify-content: space-around;
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;  
 }
 
@@ -140,6 +138,8 @@ footer .social {
   justify-content: center;
   align-items: center;  
 }
+
+/* ---------- Mobile Styles - Homepage ---------- */
 
 .hero-area {
   display: flex;
@@ -176,6 +176,8 @@ aside {
   flex-flow: row wrap;
 }
 
+/* ---------- Mobile Styles - About ---------- */
+
 .mission {
   display: flex;
   justify-content: center;
@@ -190,6 +192,8 @@ aside {
   flex-flow: row wrap;
 }
 
+/* ---------- Mobile Styles - FAQ ---------- */
+
 .faq {
   display: flex;
   justify-content: center;
@@ -203,11 +207,6 @@ aside {
   align-items: center;  
   flex-flow: row wrap;
 }
-/* ---------- Mobile Styles - Homepage ---------- */
-
-/* ---------- Mobile Styles - About ---------- */
-
-/* ---------- Mobile Styles - FAQ ---------- */
 
 /* ==========================================================================
    Helper classes
