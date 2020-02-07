@@ -202,6 +202,7 @@ header nav ul {
 }
 
 header nav ul li {
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -229,6 +230,7 @@ footer .contact {
   justify-content: center;
   align-items: center;  
   flex-flow: column wrap;
+  margin-bottom: 40px;
 }
 
 footer .social-icons {
@@ -267,6 +269,32 @@ aside {
   background-color: #527158;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Features */
 
 .features {
@@ -294,19 +322,6 @@ aside {
 .features p {
   margin: 0;
   text-align: center;
-}
-
-/* Form */
-
-.form input[type='text'] {
-  height: 50px;
-  width: 100%;
-}
-
-.form input[type='button'] {
-  height: 50px;
-  margin: 15px 0;
-  width: 100%;
 }
 
 /* Reviews */
@@ -365,6 +380,14 @@ main .contact {
 
 .faq h2 {
   margin-bottom: 40px;
+}
+
+.faq h4 {
+  margin: 0 0 10px;
+}
+
+.faq p {
+  margin: 0;
 }
 
 .faq-content-item {
