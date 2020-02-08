@@ -187,6 +187,14 @@ header .content-wrapper {
   margin: 10px 0 20px 0;
 }
 
+header figure {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
+}
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -505,6 +513,11 @@ main .contact {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 40%;
+    justify-content: flex-start;
+  }
+
   header nav {
     width: 20%;
   }
@@ -564,8 +577,8 @@ main .contact {
   }
 
   .review div,
-  .review img {
-    width: 50%;
+  .review figure {
+    width: 49%;
   }
 
   /* About Page */
@@ -610,6 +623,10 @@ main .contact {
   .content-wrapper {
     max-width: 960px;
     margin: 50px 0;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header h1 {
