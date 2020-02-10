@@ -282,9 +282,8 @@ footer .copyright {
  /* Hero Area */
 
 .hero-area {
-  background: url('../img/hero.jpg') #1a2c2a;
-  background-position: center -100px;
-  background-size: 340%;
+  background: url('../img/hero.jpg') center no-repeat #1a2c2a;
+  background-size: cover;
   display: flex;
   min-height: 500px;
   flex-flow: row wrap;
@@ -654,7 +653,6 @@ main .contact address h4 {
 
   .hero-area {
     min-height: 600px;
-    background-size: 160%;
   }
 
   .hero-area h1 {
@@ -816,11 +814,6 @@ main .contact address h4 {
 
   header h1 {
     width: 60%;
-  }
-
-  .hero-area {
-    background-size: cover;
-    background-position: center;
   }
 
   .hero-area .content-wrapper {
