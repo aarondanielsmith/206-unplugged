@@ -221,7 +221,7 @@ header nav ul li a {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
+  margin: 50px 0 5px;
 }
 
 footer h4 {
@@ -246,12 +246,25 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;  
+  width: 100%;  
+  margin-bottom: 50px;
+}
+
+footer .social-icons p {
+  background-color: #527158;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social {
   display: flex;
   justify-content: center;
   align-items: center;  
+  flex-flow: row wrap;
 }
 
 footer .copyright {
