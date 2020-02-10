@@ -301,8 +301,12 @@ aside {
   background-color: #527158;
 }
 
-aside .content-wrapper {
-  margin-top: 12px;
+/*aside .content-wrapper {
+  margin-top: 0;
+}*/
+
+aside h3 {
+  margin-top: 30px;
 }
 
 aside .form-description h3 {
@@ -311,10 +315,6 @@ aside .form-description h3 {
 
 aside .form-description p {
   margin: 0;
-}
-
-aside .form {
-  margin-top: 30px;
 }
  
 input[type=text] {
@@ -574,14 +574,23 @@ main .contact address h4 {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+
+  /* General Styles */
+
+  h2 {
+    font-size: 2.25em;
+  }
+
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
+    margin: 50px 0;
   }
+
+  /* Base Header - Footer Styles */
 
   header {
     justify-content: space-around;
-    padding: 33px 0;
+    padding: 25px 0;
   }
 
   header .content-wrapper {
@@ -592,6 +601,7 @@ main .contact address h4 {
   header figure {
     width: 40%;
     justify-content: flex-start;
+    padding: 0;
   }
 
   header nav {
@@ -599,6 +609,7 @@ main .contact address h4 {
   }
 
   header nav ul {
+    margin: 0;
     justify-content: space-between;
   }
 
@@ -610,18 +621,32 @@ main .contact address h4 {
     width: 90%;
   }
 
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  footer p {
+    margin-top: 10px;
+  }
+
   .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
   }
 
   footer .contact,
   footer .social {
-    width: 50%;
+    width: 40%;
+  }
+
+  footer .social-icons {
+    margin-bottom: 0;
   }
 
   .copyright {
+    margin-top: 100px;
     width: 100%;
   }
 
@@ -629,16 +654,34 @@ main .contact address h4 {
 
   .hero-area {
     min-height: 600px;
+    background-size: 160%;
   }
 
   .hero-area h1 {
-    width: 80%;
+    font-size: 3em;
+    line-height: 1;
   }
 
-  .newsletter .content-wrapper {
+  aside .content-wrapper {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    margin-top: 50px;
+  }
+
+  aside h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin: 0 0 20px;
+  }
+
+  aside .form-description h3 {
+    margin: 0 0 20px;
+  }
+
+  aside p{
+    font-size: 1.125em;
+    line-height: 1.333;
   }
 
   .form-description,
@@ -646,18 +689,44 @@ main .contact address h4 {
     width: 45%;
   }
 
+  input[type='text'] {
+    padding: 0.6875em;
+  }
+
+  input[type='button'] {
+    padding: 10px 0;
+  }
+
+  .features h2 {
+    line-height: 1.333;
+    margin-bottom: 15px;
+  }
+
   .features article {
     width: 30%;
-    margin: 30px 5%;
+    margin: 25px 5%;
+  }
+
+  .features article i {
+    font-size: 5em;
+    margin-bottom: 30px;
+  }
+
+  .reviews h2 {
+    line-height: 1.17;
+    margin-bottom: 20px;
   }
 
   .reviews article {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
 
   .reviews h3 {
-    margin-bottom: 15px;
+    margin: 0 0 15px;
+    font-size: 1.5em;
+    line-height: 1.25;
   }
 
   .review div,
@@ -665,35 +734,54 @@ main .contact address h4 {
     width: 49%;
   }
 
-  /* About Page */
+  /* About */
 
   .mission .mission-content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .mission h2 {
+    line-height: 1.17;
+    margin-bottom: 40px;
   }
 
   .mission p {
     width: 45%;
+    margin-top: 0;
   }
 
   .map figure {
     padding-bottom: 45%;
   }
 
+  main .contact h2 {
+    line-height: 1.333;
+    margin-bottom: 40px;
+  }
+
   main .contact address {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 50px;
   }
 
   main .contact address div {
     width: 45%;
   }
 
-  /* FAQ Page */
+  /* FAQ */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
 
   .faq h2 {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .faq p {
@@ -702,14 +790,19 @@ main .contact address h4 {
 
   .faq-content-item {
     width: 45%;
-    margin: 0 5% 30px 0;
+    margin: 0 0 40px;
+  }
+
+  .faq h4 {
+    font-size: 0.875em;
+    margin-bottom: 15px;
   }
 
 }
 
 @media only screen and (min-width: 1200px) {
-  .hero-area {
-    min-height: 775px;
+  header nav {
+    width: 15%;
   }
 
   .content-wrapper {
@@ -725,22 +818,121 @@ main .contact address h4 {
     width: 60%;
   }
 
-  .newsletter {
+  .hero-area {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-area .content-wrapper {
+    margin-top: 0;
+  }
+
+  .hero-area h1 {
+    font-size: 3.75em;
+    line-height: 1.2;
+    max-width: 75%;
+  }
+
+  aside .content-wrapper {
     justify-content: space-around;
   }
 
   .form-description,
   .form {
     width: 33%;
-    margin: 0 8%;
+  }
+
+  aside h3 {
+    font-size: 1.875em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  input[type='button'] {
+    font-size: 1.5em;
+  }
+
+  .features h2 {
+    margin-bottom: 70px;
   }
 
   .features article {
     width: 20%;
+    margin: 30px 5%;
+  }
+
+  .features p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  .reviews h2 {
+    margin-bottom: 100px;
+  }
+
+  .reviews h3 {
+    font-size: 1.875em;
+    line-height: 1.2;
+  }
+
+  .reviews p {
+    font-size: 1.125em;
+    line-height: 1.333;    
+  }
+
+  .review div,
+  .review figure {
+    width: 48%;
+  }
+
+  .review figure {
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .faq h2 {
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
+
+  .mission h2 {
+    font-size: 3em;
+  }
+
+  .mission p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  main .contact h2 {
+    font-size: 3em;
   }
 
   .map figure {
-    padding-bottom: 37%;
+    padding-bottom: 37.5%;
+  }
+
+  address h4 {
+    font-size: 1.875em;
+  }
+
+  address p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 1.125em;
   }
 
   footer .contact,
