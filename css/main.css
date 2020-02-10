@@ -618,6 +618,10 @@ main .contact {
     width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 45%;
+  }
+
   main .contact address {
     display: flex;
     justify-content: space-between;
@@ -675,6 +679,10 @@ main .contact {
 
   .features article {
     width: 20%;
+  }
+
+  .map figure {
+    padding-bottom: 37%;
   }
 
   footer .contact,
